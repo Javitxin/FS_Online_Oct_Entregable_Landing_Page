@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.btn {
+    display: contents;
+}
+
+h2 {
+    display: flex;
+    color: rgba(0, 157, 149, 1);
+    margin-top: 0;
+}
+
+h2 span {
+    color: #e8999f;
+}
+
+select {
+    list-style: none;
+    color: rgba(0, 157, 149, 1);
+    border: none;
+    font-size: 18px;
+}
+
+select.nov {
+    -moz-text-decoration-style: none;
+    appearance: none;
+}
+
+.listado,
+.novedadesMarcas {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.novedadesMarcas {
+    color: rgba(0, 157, 149, 1);
+    font-size: 18px;
+}
+
+.iconos {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    gap: 15px;
+}
+
+.imgPrincipal {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 5;
+    left: 0;
+    z-index: -100;
+}
+
+.definicion2 {
+    position: absolute;
+    top: 900PX;
+    font-size: 18px;
+    color: white;
+}
+
+.definicion1 {
+    position: absolute;
+    top: 865px;
+    font-size: 10px;
+    color: white;
+}
+
+.sun {
+    position: absolute;
+    top: 815px;
+    color: rgba(48, 48, 48, 0.5);
+    background-color: rgba(48, 48, 48, 0.25);
+    font-size: 20px;
+}
+
+.solar {
+    position: absolute;
+    top: 785px;
+    color: rgba(48, 48, 48, 0.5);
+    font-size: 20px;
+}
+
+.proteccion {
+    position: absolute;
+    top: 760px;
+    color: rgba(48, 48, 48, 0.5);
+    font-size: 20px;
+}
+
+.nuevo {
+    position: absolute;
+    display: inline-flex;
+    color: rgba(48, 48, 48, 0.5);
+    top: 745px;
+    gap: 10px;
+}
+
+.nuevo span {
+    color: rgba(255, 255, 0, 0.5);
+    font-size: 15px;
+}
+
+.numero {
+    position: absolute;
+    display: inline-flex;
+    color: rgba(48, 48, 48, 0.5);
+    font-size: 125px;
+    top: 510px;
+}
+
+.spf {
+    position: absolute;
+    display: inline;
+    color: rgba(48, 48, 48, 0.473);
+    top: 580px;
+    font-size: 40px;
+    padding-left: 15px;
+}
+
+.spf span {
+    font-size: 15px;
+    padding-right: 65px;
+}
+
+@media only screen and (max-width:580px) {
+    select,
+    .listado,
+    .novedadesMarcas {
+        color: #e8999f;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .listado,
+    select,
+    .novedadesMarcas {
+        /*display: contents;*/
+        flex-direction: column;
+        justify-content: left;
+        align-items: flex-start;
+    }
+    .btn {
+        display: flex;
+    }
+    h2 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-items: center;
+    }
+}
+
+.btn:hover {
+    .listado,
+    select,
+    .novedadesMarcas {
+        display: flex;
+    }
+}
